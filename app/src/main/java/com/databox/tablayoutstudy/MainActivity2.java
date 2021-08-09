@@ -63,7 +63,7 @@ public class MainActivity2 extends AppCompatActivity {
         mViewPager.setAdapter(mAdapter);
 
         mTabLayout.setupWithViewPager(mViewPager);
-        mTabLayout.setTabsFromPagerAdapter(mAdapter);
+//        mTabLayout.setTabsFromPagerAdapter(mAdapter);
 
     }
 

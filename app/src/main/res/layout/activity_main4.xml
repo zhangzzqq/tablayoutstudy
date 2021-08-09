@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!--    <color name="purple_200">#FFBB86FC</color>-->
+    <!--    <color name="purple_500">#FF6200EE</color>-->
+    <!--    <color name="purple_700">#FF3700B3</color>-->
+    <!--    <color name="teal_200">#FF03DAC5</color>-->
+    <!--    <color name="teal_700">#FF018786</color>-->
+    <!--    <color name="black">#FF000000</color>-->
+    <!--    <color name="white">#FFFFFFFF</color>-->
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tabBackground="@android:color/transparent"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/purple_700"
+        app:tabIndicatorFullWidth="false"
+        app:tabMaxWidth="0dp"
+        app:tabRippleColor="@android:color/transparent"
+        app:tabSelectedTextColor="@color/teal_700"
+        app:tabTextColor="@color/teal_200">
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E4E4E4"
+        app:layout_constraintBottom_toTopOf="@id/tab_layout" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:background="@color/teal_700"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/line"
+
+        >
+
+    </androidx.viewpager.widget.ViewPager>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
